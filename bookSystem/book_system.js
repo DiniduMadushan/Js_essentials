@@ -35,3 +35,15 @@ function showbooks(){
     document.getElementById('books').innerHTML=bookDiv.join('');
 }
 
+function clearInputs(){
+    document.getElementById('bookName').value='';
+    document.getElementById('authorName').value='';
+    document.getElementById('bookDescription').value='';
+    document.getElementById('pagesNumber').value='';
+}
+
+function deletebook(index){
+    books.splice(index,1)
+    showbooks();
+}
+
